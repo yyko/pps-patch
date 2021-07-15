@@ -111,7 +111,7 @@ initializeServerContext secrets = liftIO $ do
       let localhost = "http://localhost:8009"
       putStrLn $ "WEBGHC_URL not set, using " <> localhost
       parseBaseUrl localhost
-  manager <- newManager defaultManagerSettings {managerResponseTimeout = responseTimeoutMicro 90000000}
+  manager <- newManager defaultManagerSettings {managerResponseTimeout = responseTimeoutMicro 300000000}
   let clientEnv = mkClientEnv manager webghcURL
   pure $ AppConfig authConfig clientEnv
 
