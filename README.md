@@ -1,7 +1,7 @@
 # pps-patch
 Plutus playground server fix for 30 seconds timeout during compiling and evalution.
 
-This walkaround being actual till the proper pull-request approved.
+This walkaround being actual till the proper pull-request approved and still based on the hardcoded constant (wich I increased from 90 to 300 seconds).
 
 If you faced with such kind of error during compilation or evalutation exactly after 30 second after start
 
